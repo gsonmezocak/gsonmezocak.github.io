@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHunting</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <i class="fas fa-briefcase"></i>
+                <h1 id="form-title">Welcome !</h1>
+                <p id="form-subtitle">Please enter your details</p>
+            </div>
+
+            <div class="role-selector">
+                <button id="btn-jobseeker" class="role-btn active" onclick="setRole('jobseeker')">Jobseeker</button>
+                <button id="btn-recruiter" class="role-btn" onclick="setRole('recruiter')">Recruiter</button>
+            </div>
+
+            <form id="auth-form">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-btn" class="main-button">Sign In</button>
+            </form>
+
+            <div class="footer-links">
+                <p id="toggle-text">Don't have an account? <a href="#" id="toggle-auth-link">Create Account</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>
